@@ -1,0 +1,50 @@
+---
+:source:
+  :path: test
+  :file: test_leds.c
+:successes:
+- :test: test_LedsOffAfterCreate
+  :line: 20
+  :message: ''
+  :unity_test_time: 0
+- :test: test_TurnOnLedOne
+  :line: 28
+  :message: ''
+  :unity_test_time: 0
+- :test: test_TurnOffLedOne
+  :line: 34
+  :message: ''
+  :unity_test_time: 0
+- :test: test_TurnOnAndOffManyLeds
+  :line: 41
+  :message: ''
+  :unity_test_time: 0
+- :test: test_TurnOnAllLedsAtOnce
+  :line: 49
+  :message: ''
+  :unity_test_time: 0
+- :test: test_TurnOffAllLedsAtOnce
+  :line: 55
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsLedOff
+  :line: 62
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsLedOn
+  :line: 73
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ParameterLimits
+  :line: 83
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0006535350003105123
