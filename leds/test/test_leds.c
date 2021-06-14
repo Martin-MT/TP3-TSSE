@@ -60,23 +60,14 @@ void test_TurnOffAllLedsAtOnce(void){
 
 // Se puede consultar el estado de un LED apagado
 void test_IsLedOff(void){
-    bool ledIsOff = false;
-    ledsVirtuales = 0xFFFF;
-    ledIsOff = Led_IsOff(LED);
-    TEST_ASSERT_EQUAL_HEX16(ledIsOff, false);
     Led_TurnOff(LED);
-    ledIsOff = Led_IsOff(LED);
-    TEST_ASSERT_EQUAL_HEX16(ledIsOff, true);
+    TEST_ASSERT_TRUE(Led_IsOff(LED));
 }
 
 // Se puede consultar el estado de un LED prendido
 void test_IsLedOn(void){
-    bool ledIsOn = false;
-    ledIsOn = Led_IsOn(LED);
-    TEST_ASSERT_EQUAL_HEX16(ledIsOn, false);
     Led_TurnOn(LED);
-    ledIsOn = Led_IsOn(LED);
-    TEST_ASSERT_EQUAL_HEX16(ledIsOn, true);
+    TEST_ASSERT_TRUE(Led_IsOn(LED));
 }
 
 // Revisar límites de los parámetros
